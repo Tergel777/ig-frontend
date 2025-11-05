@@ -22,7 +22,7 @@ const SignUpPage = () => {
     }
 
     const handlePassword = async () => {
-        const response = await fetch("http://localhost:5500/signup", {
+        const response = await fetch(process.env.NEXT_PUBLIC_API_URL + "/signup", {
             headers: {
                 "Content-Type": "application/json",
             },
